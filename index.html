@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAEROLAB | Aerodynamics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#home"><span>V</span>AERO<span>LAB</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#principles">Principles</a>
+    <a href="#airfoils">Airfoils</a>
+    <a href="#investigation">Investigation</a>
+    <a href="#applications">Applications</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+  <button id="menuBtn">☰</button>
+</header>
+
+<div id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#principles">Principles</a>
+  <a href="#airfoils">Airfoils</a>
+  <a href="#investigation">Investigation</a>
+  <a href="#applications">Applications</a>
+  <a href="#quiz">Quiz</a>
+</div>
+
+<div class="process"><span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+
+<section class="hero" id="home">
+  <div>
+    <p class="eyebrow">AERODYNAMICS · AIRFOIL DESIGN</p>
+    <h1>How wings<br><span>create lift.</span></h1>
+    <p class="lead">Explore the science behind flight, compare different airfoil shapes and see how aerodynamic principles are applied to aircraft design.</p>
+    <div class="buttons">
+      <a class="button primary" href="#principles">Start exploring</a>
+      <a class="button secondary" href="#airfoils">View airfoils</a>
+    </div>
+  </div>
+  <div class="image-box"><img src="images/hero-airfoil.png" alt="Your hero image"> </div>
+</section>
+
+<section class="section" id="principles">
+  <div class="heading">
+    <p class="eyebrow">THE FUNDAMENTALS</p>
+    <h2>Three ideas behind flight.</h2>
+    <p>These principles help explain why an aircraft wing can produce lift.</p>
+  </div>
+
+  <article class="principle">
+    <div>
+      <p class="number">PRINCIPLE 01</p>
+      <h3>Bernoulli's Principle</h3>
+      <p>In a simplified model, when fluid speed increases, static pressure decreases. The airflow around a wing contributes to a pressure difference that helps produce lift.</p>
+      <ul><li>Faster airflow → lower static pressure</li><li>Slower airflow → higher static pressure</li><li>Pressure difference contributes to lift</li></ul>
+    </div>
+    <div class="image-box"><img src="images/bernoulli.png" alt="Bernoulli illustration"></div>
+  </article>
+
+  <article class="principle reverse">
+  <div class="image-box">
+    <img src="images/newton-aoa.png" alt="Angle of attack and Newton's third law illustration">
+   
+  </div>
+
+  <div>
+    <p class="number">PRINCIPLE 02</p>
+
+    <h3>Angle of Attack & Newton's Third Law</h3>
+
+    <p>
+      Angle of attack is the angle between the airfoil's chord line and the
+      incoming airflow. As the angle of attack increases, the wing changes the
+      direction of the airflow and deflects more air downward. According to 
+      Newton's Third Law, this change in the air's motion is associated with
+      an upward reaction force on the wing, contributing to lift.
+    </p>
+
+    <div class="formula">
+      F<sub>lift</sub> -F<sub>air</sub>
+    </div>
+
+    <p>
+      Increasing the angle of attack generally increases lift until the wing
+      reaches its stall region.
+    </p>
+  </div>
+</article>
+
+</section>
+
+<section class="section light" id="airfoils">
+  <div class="heading">
+    <p class="eyebrow">Anatomy of an Airfoil</p>
+    <h2>Learn the parts of an airfoil.</h2>
+    <p>Click the labels on the side to learn what each part does.</p>
+  </div>
+
+  <div class="interactive">
+    <div class="airfoil-image"><img src="images/airfoilparts.png" alt="Airfoil parts"></div>
+    <div class="airfoil-info">
+      <div id="labelButtons"></div>
+      <div class="info">
+        <p class="number">AIRFOIL PART</p>
+        <h3 id="labelTitle">Camber</h3>
+        <p id="labelDesc">The curvature of the airfoil. A cambered airfoil can generate lift at zero angle of attack.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="airfoil-types">
+  <div class="heading">
+    <p class="eyebrow">AIRFOIL DESIGN</p>
+    <h2>Compare three profiles.</h2>
+  </div>
+  <div class="cards" id="airfoilCards"></div>
+</section>
+
+<section class="section dark" id="investigation">
+  <div class="heading">
+    <p class="eyebrow">MY INVESTIGATION</p>
+    <h2>From design to testing.</h2>
+    <p>I designed and tested different airfoil models using a small wind tunnel to investigate how shape affects aerodynamic performance.</p>
+  </div>
+
+  <div class="steps">
+    <div><b>01</b><h3>Design</h3><p>Create consistent airfoil models.</p></div>
+    <div><b>02</b><h3>Build</h3><p>Construct lightweight models.</p></div>
+    <div><b>03</b><h3>Test</h3><p>Use controlled fan settings and angle of attack.</p></div>
+    <div><b>04</b><h3>Analyze</h3><p>Compare measurements and identify patterns.</p></div>
+  </div>
+
+  <div class="image-box large"><img src="images/wind-tunnel.png" alt="Wind tunnel experiment"></div>
+</section>
+
+<section class="section" id="results">
+  <div class="heading">
+    <p class="eyebrow">RESULTS</p>
+    <h2>What did the testing show?</h2>
+  </div>
+  <div class="results">
+    <div class="image-box"><img src="images/results-graph.png" alt="Results graph"></div>
+    <div>
+  <h3>Experimental findings</h3>
+
+  <p>
+    The results followed the expected trend: increasing camber resulted in
+    greater measured lift. The high-cambered airfoil produced the most lift,
+    followed by the low-cambered airfoil, while the symmetrical airfoil
+    produced the least. The readings for all three designs were relatively
+    stable, suggesting that the testing method produced consistent results.
+  </p>
+
+  <p>
+    Each airfoil and its stand had an initial mass of approximately <b>6 g</b>.
+    The tests were conducted at a constant <b>10° angle of attack</b> so that
+    airfoil shape was the main variable being compared.
+  </p>
+
+  <div class="note">
+    <b>Average measured lift</b><br>
+    High-cambered: <b>1.38 g</b><br>
+    Low-cambered: <b>0.94 g</b><br>
+    Symmetrical: <b>0.78 g</b>
+  </div>
+
+  <p>
+    The high-cambered airfoil produced approximately <b>77% more lift</b>
+    than the symmetrical airfoil, while the low-cambered airfoil produced
+    approximately <b>21% more lift</b> than the symmetrical design. This
+    supports the conclusion that, under the conditions tested, greater
+    camber increased the lift produced by the airfoil.
+  </p>
+</div>
+</section>
+
+<section class="section light" id="applications">
+  <div class="heading"><p class="eyebrow">REAL-WORLD APPLICATIONS</p><h2>Where are airfoils used?</h2></div>
+  <div class="applications">
+    <article><div class="small-image"><img src="images/aircraft.png" alt="Aircraft"></div><h3>Aircraft wings</h3><p>Wing profiles balance lift, drag, speed and efficiency.</p></article>
+    <article><div class="small-image"><img src="images/glider.png" alt="Glider"></div><h3>Gliders</h3><p>Efficient wings help gliders produce useful lift while minimizing drag.</p></article>
+    <article><div class="small-image"><img src="images/rotor.png" alt="Rotor"></div><h3>Wind-turbine Rotors</h3><p>Airfoil-shaped rotor blades generate aerodynamic forces as they rotate.</p></article>
+  </div>
+</section>
+
+<section class="section dark" id="quiz">
+  <div class="heading"><p class="eyebrow">TEST YOUR KNOWLEDGE</p><h2>Can you beat the quiz?</h2><p>Answer all 10 questions.</p></div>
+  <div id="quizBox"></div>
+</section>
+
+<footer><div><strong>VAEROLAB</strong><p>An educational investigation into aerodynamics and airfoil design.</p></div><p>Personal Project · Aerospace Engineering · Vansh Maheshwari</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
