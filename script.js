@@ -28,7 +28,7 @@ const questions=[
 ["Which part first meets the airflow?",["Trailing edge","Chord line","Leading edge","Camber"],2],
 ["Angle of attack is measured between…",["Wing and horizon","Chord line and incoming airflow","Upper and lower surface","Wing and fuselage"],1],
 ["NACA 0012 is…",["Highly cambered","Symmetrical","A flat plate","Supercritical"],1],
-["Aerodynamic drag is approximately proportional to…",["Speed","Speed²","Weight","√Speed"],1],
+["As Speed increases, aerodynamic drag …",["Decreases","Increases","Stays the same","Depends on the airfoil"],1],
 ["Why are efficient wings useful for gliders?",["Higher top speed","High lift-to-drag ratio","They fly inverted","They eliminate gravity"],1],
 ["Winglets can reduce…",["Thrust","Induced drag","Weight","Fuel temperature"],1],
 ["In steady level flight, lift balances…",["Drag","Thrust","Weight","Zero"],2]
